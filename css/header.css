@@ -1,0 +1,153 @@
+/* HEADER - START */
+/* HEADER (FOR JAVA SCRIPT) */
+.header-background-opacity-25 {
+  background-color: rgba(0, 51, 33, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  z-index: 10000;
+}
+
+.header-background-opacity-50 {
+  background-color: rgba(0, 51, 33, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 10000;
+}
+
+.header-background-opacity-75 {
+  background-color: rgba(0, 51, 33, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+  z-index: 10000;
+}
+
+.header-background-opacity-100 {
+  background-color: #003321;
+  border-bottom: 1px solid white;
+  z-index: 10000;
+}
+
+/* HEADER (FOR JAVA SCRIPT) */
+.body {
+  position: relative;
+  font-family: "SFProDisplay", sans-serif;
+}
+
+.header {
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+}
+.header__company-name {
+  font-family: "SFProDisplay", sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+.header-link {
+  margin-right: 40px;
+}
+
+.header-social a:last-child {
+  margin-right: 0px;
+}
+
+.header-icon {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.2s;
+}
+
+.header-icon:hover {
+  transform: scale(1.5, 1.5);
+  transition: 0.2s;
+}
+
+.header-button {
+  background: none;
+  border: none;
+  transition: 0.2s;
+}
+
+.header-button:hover {
+  transform: scale(1.1, 1.4);
+  transition: 0.2s;
+}
+
+.header-menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 999;
+  transform: translateY(-1000px);
+  padding-top: 30px;
+  width: 100%;
+  background-color: #0b251c;
+  border-bottom: 1px solid white;
+  border-top: none;
+  transition: transform 0.5s;
+}
+.header-menu__wrapper {
+  max-width: 1390px;
+  margin: 0 auto;
+}
+
+.header-menu-active {
+  transform: translateY(0px);
+  transition: transform 0.3s;
+}
+
+.header__menu-item {
+  margin-left: 30px;
+  margin-bottom: 15px;
+  padding: 0px 20px;
+  text-align: end;
+}
+.header__menu-item:first-child {
+  margin-top: 20px;
+}
+.header__menu-item:last-child {
+  margin-bottom: 20px;
+}
+.header__menu-link:hover {
+  padding-right: 12px;
+  color: #ffffff;
+  border-right: 2px solid #ffffff;
+  transition: 0.2s;
+}
+.header__menu-link {
+  font-family: "SFProDisplay", sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: white;
+  border-right: 1px solid #ffffff00;
+  transition: 0.3s;
+}
+.header__close {
+  position: relative;
+}
+.header__close-link {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  height: 25px;
+}
+
+@media (max-width: 1390px) {
+  .header {
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 500px) {
+  .header-link {
+    margin-right: 20px;
+  }
+}
+/* HEADER - END */

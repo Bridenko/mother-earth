@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* FONTS - START */
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/FontsFree-Net-SFProDisplay-Bold.eot");
+  src: local("☺"), url("../fonts/FontsFree-Net-SFProDisplay-Bold.woff") format("woff"), url("../fonts/FontsFree-Net-SFProDisplay-Bold.ttf") format("truetype"), url("../fonts/FontsFree-Net-SFProDisplay-Bold.svg") format("svg");
+  font-weight: 700;
+  /* Bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/FontsFree-Net-SFProDisplay-Heavy.eot");
+  src: local("☺"), url("../fonts/FontsFree-Net-SFProDisplay-Heavy.woff") format("woff"), url("../fonts/FontsFree-Net-SFProDisplay-Heavy.ttf") format("truetype"), url("../fonts/FontsFree-Net-SFProDisplay-Heavy.svg") format("svg");
+  font-weight: 800;
+  /* Heavy */
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/FontsFree-Net-SFProDisplay-Medium.eot");
+  src: local("☺"), url("../fonts/FontsFree-Net-SFProDisplay-Medium.woff") format("woff"), url("../fonts/FontsFree-Net-SFProDisplay-Medium.ttf") format("truetype"), url("../fonts/FontsFree-Net-SFProDisplay-Medium.svg") format("svg");
+  font-weight: 500;
+  /* Medium */
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFProText";
+  src: url("../fonts/FontsFree-Net-SFProText-Regular.eot");
+  src: local("☺"), url("../fonts/FontsFree-Net-SFProText-Regular.woff") format("woff"), url("../fonts/FontsFree-Net-SFProText-Regular.ttf") format("truetype"), url("../fonts/FontsFree-Net-SFProText-Regular.svg") format("svg");
+  font-weight: 400;
+  /* Regular */
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/ofont.ru_Helvetica Neue.eot");
+  src: local("☺"), url("../fonts/ofont.ru_Helvetica Neue.woff") format("woff"), url("../fonts/ofont.ru_Helvetica Neue.ttf") format("truetype"), url("../fonts/ofont.ru_Helvetica Neue.svg") format("svg");
+  font-weight: 700;
+  /* Bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/PlayfairDisplay-Regular.eot");
+  src: local("☺"), url("../fonts/PlayfairDisplay-Regular.woff") format("woff"), url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Regular.svg") format("svg");
+  font-weight: 400;
+  /* Regular */
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFCompactText";
+  src: url("../fonts/SF-Compact-Text-Light.eot");
+  src: local("☺"), url("../fonts/SF-Compact-Text-Light.woff") format("woff"), url("../fonts/SF-Compact-Text-Light.ttf") format("truetype"), url("../fonts/SF-Compact-Text-Light.svg") format("svg");
+  font-weight: 300;
+  /* Light */
+  font-style: normal;
+}
+@font-face {
+  font-family: "SFCompactText";
+  src: url("../fonts/FontsFree-Net-SFCompactText-Regular.eot");
+  src: local("☺"), url("../fonts/FontsFree-Net-SFCompactText-Regular.woff") format("woff"), url("../fonts/FontsFree-Net-SFCompactText-Regular.ttf") format("truetype"), url("../fonts/FontsFree-Net-SFCompactText-Regular.svg") format("svg");
+  font-weight: 400;
+  /* Regular */
+  font-style: normal;
+}
+/* FONTS - END */
