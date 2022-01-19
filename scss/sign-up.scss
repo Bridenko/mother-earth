@@ -1,7 +1,7 @@
 
 /* SECTION SIGN UP - START */
 
-input[type='name'],[type='email'],[type='tel'] { 
+input[type='text'],[type='email'],[type='tel'] { 
     font-family: 'SFProDisplay', sans-serif;
     font-size: 11px;
     letter-spacing: 2px;
@@ -54,7 +54,7 @@ input[type='name'],[type='email'],[type='tel'] {
     &__form {
         position: absolute;
         right: 133px;
-        bottom: -98px;
+        bottom: -99px;
         display: flex;
         flex-direction: column;
         max-width: 501px;
