@@ -1,25 +1,25 @@
 /* HEADER - START */
 /* HEADER (FOR JAVA SCRIPT) */
 .header-background-opacity-25 {
-  background-color: rgba(0, 51, 33, 0.25);
+  background: linear-gradient(to top, rgba(0, 19, 12, 0.25), rgba(0, 59, 39, 0.25));
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   z-index: 10000;
 }
 
 .header-background-opacity-50 {
-  background-color: rgba(0, 51, 33, 0.5);
+  background: linear-gradient(to top, rgba(0, 19, 12, 0.5), rgba(0, 59, 39, 0.5));
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   z-index: 10000;
 }
 
 .header-background-opacity-75 {
-  background-color: rgba(0, 51, 33, 0.75);
+  background: linear-gradient(to top, rgba(0, 19, 12, 0.75), rgba(0, 59, 39, 0.75));
   border-bottom: 1px solid rgba(255, 255, 255, 0.75);
   z-index: 10000;
 }
 
 .header-background-opacity-100 {
-  background-color: #003321;
+  background: linear-gradient(to top, rgba(0, 19, 12, 0.96), rgba(0, 59, 39, 0.96));
   border-bottom: 1px solid white;
   z-index: 10000;
 }
@@ -39,7 +39,9 @@
   font-family: "SFProDisplay", sans-serif;
   font-size: 22px;
   letter-spacing: 2px;
+  font-weight: 600;
   color: white;
+  text-shadow: -5px 5px 20px #00130c;
 }
 
 .header-container {
@@ -89,9 +91,8 @@
   transform: translateY(-1000px);
   padding-top: 30px;
   width: 100%;
-  background-color: #0b251c;
+  background: linear-gradient(to top, #00130c, #003b27);
   border-bottom: 1px solid white;
-  border-top: none;
   transition: transform 0.5s;
 }
 .header-menu__wrapper {

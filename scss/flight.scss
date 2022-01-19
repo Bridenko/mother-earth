@@ -8,6 +8,7 @@
     background-image: url(../img/flight-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0px 6px 5px rgba(136, 136, 136, 0.3), 0px -6px 5px rgba(136, 136, 136, 0.3);
 }
 
 
@@ -21,57 +22,67 @@
 .fly-featured {
     display: inline-block;
     margin-top: 550px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     font-family: 'SFProDisplay', sans-serif;
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 600;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
 .fly-featured__link {
     padding: 18px 31px;
     color: white;
-    background-color: #E8594E;
+    background-color: #ec3528;
     border-radius: 24px;
+    border: 1px solid white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 1.0);
     transition: 0.2s;
 }
 .fly-featured__link:hover {
     padding: 18px 35px;
     letter-spacing: 3px;
-    background-color: #ec3528;
+    background-color: #d43227;
     transition: 0.2s;
 }
 
 .fly-title {
     max-width: 650px;
-    margin-bottom: 16px;
+    margin-bottom: 36px;
+    padding-left: 20px;
     color: white;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
+    border-left: 3px solid rgb(255, 255, 255);
 }
 .section-title {
 
 }
 .fly-text {
     max-width: 634px;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
     font-family: 'SFCompactText', sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: white;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 1.0);
 }
 .fly-buttom {
     display: inline-block;
     margin-bottom: 120px;
     font-family: 'SFProDisplay', sans-serif;
     font-size: 12px; 
+    text-shadow: 3px 3px 3px rgb(128, 128, 128);
 }
 .fly-buttom__link {
     padding: 33px 79px;
     color: white;
-    background-color: #73AFBA;
     border-radius: 8px;
+    border: 1px solid white;
+    box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.349);
+    background: linear-gradient(#73AFBA, #00b6d6);
     transition: 0.2s;
 }
 .fly-buttom__link:hover {
     padding: 33px 85px;
     letter-spacing: 3px;
-    background-color: #46a9bb;
     transition: 0.2s;
 }
 
@@ -93,18 +104,23 @@
     font-size: 64px;
     line-height: 80px;
     color: white;
+    text-shadow: 6px 6px 3px rgba(0, 56, 19, 0.514);
 }
 .stories-ico {
     display: block;
     height: 48px;
-    padding-right: 33px;
     align-self: flex-start;
-    
+    box-shadow: 4px 4px 3px rgba(0, 56, 19, 0.514);
+    border-radius: 50%;
+    border: solid 1px white;
 }
 .stories-comment {
     display: flex;
     margin-top: 33px;
     border-bottom: gray solid 1px;
+}
+.stories-comment div {
+    padding-left: 33px;
 }
 .stories-comment:last-child {
     border-bottom: none;
@@ -118,12 +134,14 @@
     font-size: 18px;
     line-height: 24px;
     color: white;
+    text-shadow: 6px 6px 3px rgba(0, 56, 19, 0.514);
 }
 .stories-date {
     margin-bottom: 32px;
     font-family: 'SFProText', sans-serif;
     font-size: 11px;
     color: rgba(255, 255, 255, 0.502293);
+    text-shadow: 6px 6px 3px rgba(0, 56, 19, 0.514);
 }
 
 @media (max-width: 1390px) {

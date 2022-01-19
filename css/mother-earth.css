@@ -8,6 +8,7 @@ input[type=text] {
   margin-bottom: 150px;
   min-height: 100vh;
   background-image: url(../img/Background.jpg);
+  box-shadow: 0px 5px 10px #666666;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,6 +29,7 @@ input[type=text] {
   letter-spacing: 2px;
   color: white;
   background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 5px red;
   border-radius: 100px;
   transition: 0.2s;
 }
@@ -35,16 +37,20 @@ input[type=text] {
   padding: 18px 40px;
   letter-spacing: 6px;
   background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 8px red;
   transition: 0.2s;
 }
 .intro-section__title {
   margin-bottom: 60px;
   max-width: 534px;
+  padding-left: 20px;
   font-family: "SFProDisplay", sans-serif;
   font-weight: 700;
   font-size: 80px;
   line-height: 84px;
   color: white;
+  text-shadow: 0px 0px 30px black;
+  border-left: 2px solid white;
 }
 .intro-section__text {
   max-width: 500px;
@@ -53,6 +59,7 @@ input[type=text] {
   font-size: 14px;
   line-height: 16px;
   color: white;
+  text-shadow: 0px 0px 10px black;
 }
 .intro-section__button {
   position: relative;
@@ -62,13 +69,15 @@ input[type=text] {
   font-family: "SFProDisplay", sans-serif;
   border-radius: 8px;
   color: white;
-  background-color: #E8594E;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.658);
+  border: 2px solid rgba(0, 0, 0, 0.55);
+  background: linear-gradient(#ff6d62, #cc0e00);
+  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.349);
   transition: 0.2s;
 }
 .intro-section__button:hover {
   padding: 33px 90px;
   letter-spacing: 3px;
-  background-color: #ec3528;
   transition: 0.2s;
 }
 .intro-section__button-link {

@@ -18,6 +18,7 @@ input[type='name'],[type='email'],[type='tel'] {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 7px;
+    box-shadow: 0px 6px 3px rgba(136, 136, 136, 0.2), 0px -6px 3px rgba(136, 136, 136, 0.2), 6px 0px 3px rgba(136, 136, 136, 0.2), -6px 0px 3px rgba(136, 136, 136, 0.2);
 
     &__container {
         max-width: 1080px;
@@ -25,17 +26,19 @@ input[type='name'],[type='email'],[type='tel'] {
     }
 
     &__content {
-        
+        padding-top: 300px;
     }
 
     &__title {
-        padding-top: 336px;
+        padding-left: 20px;
         margin-bottom: 40px;
         max-width: 368px;
         font-family: 'SFProDisplay', sans-serif;
         font-size: 64px;
         line-height: 80px;
         color: white;
+        border-left: 3px solid rgb(255, 255, 255);
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 1.0);
     }
 
     &__text {
@@ -45,16 +48,19 @@ input[type='name'],[type='email'],[type='tel'] {
         font-size: 16px;
         line-height: 21px;
         color: white;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 1.0);
     }
 
     &__form {
         position: absolute;
         right: 133px;
-        bottom: -96px;
+        bottom: -98px;
         display: flex;
         flex-direction: column;
         max-width: 501px;
         width: 100%;
+        border-radius: 8px ;
+        
     }
 }
 .form {
@@ -63,6 +69,9 @@ input[type='name'],[type='email'],[type='tel'] {
     padding: 30px 0px 50px 0px;
     background-color:white;
     border-radius: 8px 8px 0px 0px;
+    border: 3px solid rgba(128, 128, 128, 0.5);
+    border-bottom: none;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.486);
 }
 .form-input {
     margin: 0px 72px;
@@ -78,19 +87,24 @@ input[type='name'],[type='email'],[type='tel'] {
 .form-input::placeholder {
     font-family: 'SFProDisplay', sans-serif;
     font-size: 11px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     color: black;
+    
 }
 .form-button {
     padding: 41px 0px;
     max-width: 501px;
     font-family: 'SFProDisplay', sans-serif;
     font-size: 12px;
-    letter-spacing: 2.18182px;
+    letter-spacing: 3.18182px;
     font-weight: 600;
     color: white;
+    text-shadow: 3px 3px 1px rgba(139, 139, 139, 0.5);
     border-radius: 0px 0px 8px 8px;
     background-color: #73AFBA;
+    border: 3px solid rgba(128, 128, 128, 0.9);
+    border-top: none;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.486);
     transition: 0.3s;
 }
 .form-button:hover {
@@ -107,16 +121,16 @@ input[type='name'],[type='email'],[type='tel'] {
         &__content {
             padding-left: 20px;
         }
-        &__title {
-            padding-top: 100px;
-            
+        
+        &__content {
+            padding-top: 70px;
         }
         &__form {
             left: auto;
-            right: auto;
-            bottom: -96px;  
+            right: auto;  
             padding: 0px 20px;
         }
+        
     }
 }
 
@@ -134,6 +148,9 @@ input[type='name'],[type='email'],[type='tel'] {
         padding-right: 20px;
         font-size: 55px;
         line-height: 65px;
+    }
+    .sign-up__content {
+        padding-top: 120px;
     }
 }
 
