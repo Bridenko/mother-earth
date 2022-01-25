@@ -14,7 +14,7 @@
   margin: 0 auto;
 }
 
-.fly-featured {
+.flight-fly__featured {
   display: inline-block;
   margin-top: 550px;
   margin-bottom: 60px;
@@ -23,8 +23,7 @@
   font-weight: 600;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
-
-.fly-featured__link {
+.flight-fly__featured-link {
   padding: 18px 31px;
   color: white;
   background-color: #ec3528;
@@ -33,15 +32,13 @@
   box-shadow: 0px 3px 10px black;
   transition: 0.2s;
 }
-
-.fly-featured__link:hover {
+.flight-fly__featured-link:hover {
   padding: 18px 35px;
   letter-spacing: 3px;
   background-color: #d43227;
   transition: 0.2s;
 }
-
-.fly-title {
+.flight-fly__title {
   max-width: 650px;
   margin-bottom: 36px;
   padding-left: 20px;
@@ -49,8 +46,7 @@
   text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
   border-left: 3px solid white;
 }
-
-.fly-text {
+.flight-fly__text {
   max-width: 634px;
   margin-bottom: 80px;
   font-family: "SFCompactText", sans-serif;
@@ -59,16 +55,14 @@
   color: white;
   text-shadow: 0px 2px 10px black;
 }
-
-.fly-buttom {
+.flight-fly__buttom {
   display: inline-block;
   margin-bottom: 120px;
   font-family: "SFProDisplay", sans-serif;
   font-size: 12px;
   text-shadow: 3px 3px 3px gray;
 }
-
-.fly-buttom__link {
+.flight-fly__buttom-link {
   padding: 33px 79px;
   color: white;
   border-radius: 8px;
@@ -77,8 +71,7 @@
   background: linear-gradient(#73AFBA, #00b6d6);
   transition: 0.2s;
 }
-
-.fly-buttom__link:hover {
+.flight-fly__buttom-link:hover {
   padding: 33px 85px;
   letter-spacing: 3px;
   transition: 0.2s;
@@ -92,12 +85,10 @@
   width: 478px;
   background-color: rgba(60, 74, 81, 0.94);
 }
-
-.flight-stories-container {
+.flight-stories__container {
   padding: 100px 70px 100px 70px;
 }
-
-.stories-title {
+.flight-stories__title {
   max-width: 368px;
   margin-bottom: 100px;
   font-family: "SFProDisplay", sans-serif;
@@ -106,8 +97,7 @@
   color: white;
   text-shadow: 6px 6px 3px rgba(0, 56, 19, 0.514);
 }
-
-.stories-ico {
+.flight-stories__comment-ico {
   display: block;
   height: 48px;
   align-self: flex-start;
@@ -115,26 +105,21 @@
   border-radius: 50%;
   border: solid 1px white;
 }
-
-.stories-comment {
+.flight-stories__comment {
   display: flex;
   margin-top: 33px;
   border-bottom: gray solid 1px;
 }
-
-.stories-comment div {
+.flight-stories__comment div {
   padding-left: 33px;
 }
-
-.stories-comment:last-child {
+.flight-stories__comment:last-child {
   border-bottom: none;
 }
-
-.stories-comment:first-child {
+.flight-stories__comment:first-child {
   margin-top: 0px;
 }
-
-.stories-text {
+.flight-stories__text {
   margin-bottom: 10px;
   font-family: "SFProDisplay", sans-serif;
   font-size: 18px;
@@ -142,8 +127,7 @@
   color: white;
   text-shadow: 6px 6px 3px rgba(0, 56, 19, 0.514);
 }
-
-.stories-date {
+.flight-stories__date {
   margin-bottom: 32px;
   font-family: "SFProText", sans-serif;
   font-size: 11px;
@@ -157,16 +141,12 @@
   }
 }
 @media (max-width: 1200px) {
-  .fly-title {
+  .flight-fly__title {
     max-width: 600px;
   }
 
-  .fly-text {
+  .flight-fly__text {
     max-width: 600px;
-  }
-
-  .fly-featured {
-    margin-top: 250px;
   }
 
   .flight-stories {
@@ -178,16 +158,16 @@
     background-color: rgba(60, 74, 81, 0.8);
   }
 
-  .fly-featured {
+  .flight-fly__featured {
     margin-top: 100px;
   }
 
-  .flight-stories-container {
+  .flight-stories__container {
     max-width: 580px;
     padding: 40px 20px 40px 20px;
   }
 
-  .stories-title {
+  .flight-stories__title {
     max-width: 568px;
     margin-bottom: 60px;
   }
@@ -198,7 +178,7 @@
   }
 }
 @media (max-width: 400px) {
-  .stories-title {
+  .flight-stories__title {
     font-size: 50px;
     line-height: 57px;
   }

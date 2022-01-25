@@ -47,6 +47,9 @@
         color: white;
         text-shadow: -5px 5px 20px rgb(0, 19, 12);
     }
+    
+	
+    
 }
 .header-container {
     
@@ -57,34 +60,37 @@
     padding: 20px 0px;
 }
 .header-social {
-    
+
+    &__link {
+        margin-right: 40px;
+    }
+    &__icon {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 0.2s;
+    }
+    &__icon:hover {
+        transform: scale(1.5, 1.5);
+        transition: 0.2s;
+    }
 }
 
-.header-link {
-    margin-right: 40px;
-}
 .header-social a:last-child {
     margin-right: 0px;
 }
-.header-icon {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 0.2s;
-}
-.header-icon:hover {
-    transform: scale(1.5, 1.5);
-    transition: 0.2s;
-}
-.header-button {
+
+
+.header-burger {
     background: none;
     border: none;
     transition: 0.2s;
+    &__ico {
+
+    }
 }
-.header-burger-ico {
-    
-}
-.header-button:hover {
+
+.header-burger:hover {
     transform: scale(1.1, 1.4);
     transition: 0.2s;
 }
@@ -104,47 +110,7 @@
         max-width: 1390px;
         margin: 0 auto;
     }
-}
-.header-menu-active {
-    transform: translateY(0px);
-    transition: transform 0.3s;
-}
-.header {
-	&__menu-wrapper {
-        
-	}
-	&__menu-mav {
-	}
-	&__menu-list {
-        
-	}
-	&__menu-item {
-        margin-left: 30px;
-        margin-bottom: 15px;
-        padding: 0px 20px;
-        text-align: end;
-	}
-    &__menu-item:first-child {
-        margin-top: 20px;
-    }
-    &__menu-item:last-child {
-        margin-bottom: 20px;
-	}
-    &__menu-link:hover {
-        padding-right: 12px;
-        color: #ffffff;
-        border-right: 2px solid #ffffff;
-        transition: 0.2s;
-	}
-    &__menu-link {
-        font-family: 'SFProDisplay', sans-serif;
-        font-size: 22px;
-        letter-spacing: 2px;
-        color: rgb(255, 255, 255);
-        border-right: 1px solid #ffffff00;
-        transition: 0.3s;
-    }
-    &__close {
+    &__close-button {
         position: relative;
     }
     &__close-link {
@@ -153,9 +119,43 @@
         right: 20px;
         height: 25px;
     }
+    &__mav {
+	}
+	&__list {
+        
+	}
+	&__item {
+        margin-left: 30px;
+        margin-bottom: 15px;
+        padding: 0px 20px;
+        text-align: end;
+	}
+    &__item:first-child {
+        margin-top: 20px;
+    }
+    &__item:last-child {
+        margin-bottom: 20px;
+	}
+    &__link:hover {
+        padding-right: 12px;
+        color: #ffffff;
+        border-right: 2px solid #ffffff;
+        transition: 0.2s;
+	}
+    &__link {
+        font-family: 'SFProDisplay', sans-serif;
+        font-size: 22px;
+        letter-spacing: 2px;
+        color: rgb(255, 255, 255);
+        border-right: 1px solid #ffffff00;
+        transition: 0.3s;
+    }
 }
-.js-scroll {
+.header-menu-active {
+    transform: translateY(0px);
+    transition: transform 0.3s;
 }
+
 
 @media (max-width: 1390px) {
     .header {
@@ -164,7 +164,7 @@
 }
 
 @media (max-width: 500px) {
-    .header-link {
+    .header-social__link {
         margin-right: 20px;
     }
 }

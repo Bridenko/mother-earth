@@ -23,10 +23,10 @@
 /* Header burger menu - start */
 
 ( function () {
-    const burgerItem = document.querySelector('.header-button'); /* При нажатии на бургер */
+    const burgerItem = document.querySelector('.header-burger'); /* При нажатии на бургер */
     const menu = document.querySelector('.header-menu'); /* Ищем меню */
-    const menuCloseItem = document.querySelector('.header__close'); /* Нажимая на кнопу close закрываем выпадающее меню */
-    const menuLinks = document.querySelectorAll('.header__menu-link'); /* При нажатии на ссылки закрывается выпадающее меню */
+    const menuCloseItem = document.querySelector('.header-menu__close-button'); /* Нажимая на кнопу close закрываем выпадающее меню */
+    const menuLinks = document.querySelectorAll('.header-menu__link'); /* При нажатии на ссылки закрывается выпадающее меню */
     burgerItem.addEventListener('click', () => {         /* Активируем выпадающее меню */
         menu.classList.add('header-menu-active')
     });
