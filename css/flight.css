@@ -41,10 +41,9 @@
 .flight-fly__title {
   max-width: 650px;
   margin-bottom: 36px;
-  padding-left: 20px;
-  color: white;
-  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
   border-left: 3px solid white;
+  color: white;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 .flight-fly__text {
   max-width: 634px;
@@ -81,7 +80,7 @@
   position: absolute;
   top: 0px;
   right: 0px;
-  height: 1080px;
+  height: 100%;
   width: 478px;
   background-color: rgba(60, 74, 81, 0.94);
 }

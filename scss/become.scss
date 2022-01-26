@@ -15,13 +15,14 @@
     font-size: 64px;
     font-weight: 600;
     line-height: 80px;
-    text-shadow: 10px 10px 5px rgba(128, 128, 128, 0.12);
+    padding-left: 20px;
+    border-left: 3px solid rgb(0, 0, 0);
+    
 }
 .become-title {
     margin-bottom: 100px;
     max-width: 767px;
-    padding-left: 20px;
-    border-left: 3px solid rgb(0, 0, 0);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
 }
 .become-pictures {
     display: grid;
@@ -90,6 +91,7 @@
 @media (max-width: 1390px) {
     .become-wrapper {
         padding: 0px 20px;
+        margin-bottom: 150px;
     }
     .become-pictures {
         gap: 15px;

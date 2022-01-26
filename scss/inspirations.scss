@@ -12,15 +12,13 @@
     
 }
 .inspirations-title {
-    padding-top: 16px;
-    padding-bottom: 20px;
-    max-width: 350px;
+    padding: 16px 0px 20px 0px;
+    max-width: 360px;
     margin: 0 auto;
-    font-family: 'SFProDisplay', sans-serif;
-    font-size: 64px;
     text-align: center;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    text-shadow: 3px 3px 3px rgba(59, 59, 59, 0.1);
     border-bottom: 1px solid grey;
+    border-left: none;
 }
 .inspirations-text {
     padding-top: 20px;
@@ -34,7 +32,7 @@
     color: #788692;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
-.inspirations-images {
+.inspirations-cards {
     
     display: grid;
     grid-template-columns: repeat(3, minmax(430px, auto));
@@ -46,12 +44,19 @@
     
     
 }
-.inspirations-image {
+.inspirations-card {
     position: relative;
     border-radius: 8px;
     border: 3px solid rgb(216, 216, 216);
+    overflow: hidden;
 }
-.inspirations-image:hover {
+.inspirations-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.inspirations-card:hover {
     
     .insp-info {
         left: 10px;
@@ -68,34 +73,7 @@
     height: 710px;
 }
 
-.is-img-1 {
-    background-image: url(../img/inspirations-1.jpg);
-}
-.is-img-2 {
-    background-image: url(../img/inspirations-2.jpg);
-    
-}
-.is-img-3 {
-    background-image: url(../img/inspirations-3.jpg);
-}
-.is-img-4 {
-    background-image: url(../img/inspirations-4.jpg);
-}
-.is-img-5 {
-    background-image: url(../img/inspirations-5.jpg);
-}
-.is-img-6 {
-    background-image: url(../img/inspirations-6.jpg);
-}
-.is-img-7 {
-    background-image: url(../img/inspirations-7.jpg);
-}
-.is-img-1, .is-img-2, .is-img-3, .is-img-4, .is-img-5, .is-img-6, .is-img-7 {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.3s;
-}
+
 
 .insp-info {
     position: absolute;
@@ -154,7 +132,7 @@
         padding-top: 246px;
         padding-bottom: 100px;
     }
-    .inspirations-images {
+    .inspirations-cards {
         grid-template-columns: repeat(2, minmax(350px, auto));
         grid-template-rows: repeat(4, minmax(450px, auto));
         gap: 20px;
@@ -187,7 +165,7 @@
     }
 }
 @media (max-width: 1000px) {
-    .inspirations-images {
+    .inspirations-cards {
         grid-template-columns: repeat(2, minmax(350px, auto));
         grid-template-rows: repeat(4, minmax(700px, auto));
     }
@@ -208,7 +186,7 @@
 }
 
 @media (max-width: 1000px) {
-    .inspirations-images {
+    .inspirations-cards {
         grid-template-columns: repeat(2, minmax(350px, auto));
         grid-template-rows: repeat(4, minmax(500px, auto));
     }
@@ -217,7 +195,7 @@
     }
 }
 @media (max-width: 800px) {
-    .inspirations-images {
+    .inspirations-cards {
         grid-template-columns: repeat(2, minmax(350px, auto));
         grid-template-rows: repeat(4, minmax(550px, auto));
 
@@ -227,7 +205,7 @@
     }
 }
 @media (max-width: 762px) {
-    .inspirations-images {
+    .inspirations-cards {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(7, minmax(550px, auto));
 
@@ -243,7 +221,7 @@
     }
 }
 @media (max-width: 550px) {
-    .inspirations-images {
+    .inspirations-cards {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(7, minmax(550px, auto));
     }
