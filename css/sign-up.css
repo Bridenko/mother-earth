@@ -9,8 +9,6 @@ input[type=text], [type=email], [type=tel] {
 .sign-up {
   position: relative;
   min-height: 768px;
-  max-width: 1350px;
-  margin: 0 auto;
   background-image: url(../img/sign-up-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -69,7 +67,7 @@ input[type=text], [type=email], [type=tel] {
   transition: 0.2s;
 }
 .sign-up__form-input:hover {
-  padding: 24px 15px;
+  padding: 24px 10px;
   transition: 0.2s;
 }
 .sign-up__form-input::-moz-placeholder {

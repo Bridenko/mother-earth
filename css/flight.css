@@ -9,11 +9,6 @@
   box-shadow: 0px 6px 5px rgba(136, 136, 136, 0.3), 0px -6px 5px rgba(136, 136, 136, 0.3);
 }
 
-.flight-container {
-  max-width: 1350px;
-  margin: 0 auto;
-}
-
 .flight-fly__featured {
   display: inline-block;
   margin-top: 550px;
@@ -173,7 +168,7 @@
 }
 @media (max-width: 1000px) {
   .flight {
-    margin-bottom: 70px;
+    margin-bottom: 0px;
   }
 }
 @media (max-width: 400px) {

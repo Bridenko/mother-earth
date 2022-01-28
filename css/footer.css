@@ -61,7 +61,7 @@
   transition: 0.3s;
 }
 .footer-form__input:hover {
-  padding-left: 40px;
+  padding-left: 30px;
   transition: 0.2s;
 }
 .footer-form__input::-moz-placeholder {
@@ -115,11 +115,12 @@ input[class=footer-nav__input] {
 }
 
 .footer-reserved {
+  border-top: 1px solid rgba(179, 179, 179, 0.5);
+}
+.footer-reserved__container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1350px;
-  margin: 0 auto;
 }
 .footer-reserved__text {
   margin-top: 32px;

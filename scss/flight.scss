@@ -13,8 +13,7 @@
 
 
 .flight-container {
-    max-width: 1350px;
-    margin: 0 auto;
+
 }
 .flight-fly {
     &__featured {
@@ -184,7 +183,7 @@
 }
 @media (max-width: 1000px) {
     .flight {
-        margin-bottom: 70px;
+        margin-bottom: 0px;
     }
 }
 

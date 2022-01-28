@@ -4,8 +4,12 @@ input[type=text] {
   font-size: 16px;
 }
 
+.section-container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
 .intro-section {
-  margin-bottom: 150px;
   min-height: 100vh;
   background-image: url(../img/Background.jpg);
   box-shadow: 0px 5px 10px #666666;
@@ -18,8 +22,6 @@ input[type=text] {
   flex-direction: column;
   height: 100%;
   padding-top: 160px;
-  max-width: 1350px;
-  margin: 0 auto;
 }
 .intro-section__link {
   padding: 18px 30px;
@@ -90,10 +92,6 @@ input[type=text] {
   }
 }
 @media (max-width: 1000px) {
-  .intro-section {
-    margin-bottom: 60px;
-  }
-
   .intro-section__title {
     font-size: 60px;
     line-height: 64px;

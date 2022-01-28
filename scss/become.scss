@@ -5,10 +5,8 @@
     
 }
 .become-wrapper {
-    max-width: 1350px;
-    margin: 0 auto;
-    padding-bottom: 150px;
-    
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .section-title {
     font-family: 'SFProDisplay', sans-serif; 
@@ -90,8 +88,7 @@
 
 @media (max-width: 1390px) {
     .become-wrapper {
-        padding: 0px 20px;
-        margin-bottom: 150px;
+        padding: 70px 20px;
     }
     .become-pictures {
         gap: 15px;
@@ -100,13 +97,12 @@
 
 @media (max-width: 1000px) {
     .become-pictures {
+        padding-left: 80px;
+        padding-right: 80px;
         grid-template-columns: repeat(2, minmax(auto, 315px));
         grid-template-rows: repeat(2, 1fr);
         justify-content: space-between;
-        gap: 5px;
-    }
-    .become-wrapper {
-        margin-bottom: 90px;
+        gap: 80px;
     }
     .become-title {
         margin-bottom: 150px;
@@ -116,19 +112,32 @@
         line-height: 65px;
     }
 }
+@media (max-width: 800px) {
+    .become-pictures {
+        padding-left: 40px;
+        padding-right: 40px;
+        gap: 40px;
+    }
+}
 
-@media (max-width: 550px) {
-    
+@media (max-width: 650px) {
+    .become-wrapper {
+        padding: 70px 0px;
+    }
     .become-picture {
+        border-radius: 20px;
+        border: 1px solid rgba(128, 128, 128, 0);
         
     }
-    
+    .become-pictures {
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 0px;
+    }
     .become-title {
-        margin: 0 auto;
+        margin-left: 20px;
+        padding: 0px 20px;
         margin-bottom: 70px;
-    }
-    .section-title {
-        
     }
     
 }
@@ -141,26 +150,15 @@
         line-height: 25px;
     }
 }
-@media (max-width: 500px) {
-    .become-wrapper {
-        padding: 0px;
-        
-    }
-    .become-picture {
-        border-radius: 20px;
-        border: 1px solid rgba(128, 128, 128, 0);
-        
-    }
+
+@media (max-width: 450px) {
     .become-pictures {
-        
-        gap: 0px; 
-        
+        grid-template-columns: repeat(1, minmax(auto, 315px));
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: center;
+        width: 100%;
+        gap: 5px;
     }
-    .become-title {
-        margin-left: 20px;
-        padding: 0px 20px;
-    }
-    
 }
 @media (max-width: 400px) {
     .section-title {

@@ -75,7 +75,7 @@
         transition: 0.3s;
 	}
     &__input:hover {
-        padding-left: 40px;
+        padding-left: 30px;
         transition: 0.2s;
     }
     
@@ -116,12 +116,12 @@ input[class='footer-nav__input'] {
 }
 
 .footer-reserved {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1350px;
-    margin: 0 auto;
-
+    border-top: 1px solid rgba(179, 179, 179, 0.5);
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
     &__text {
         margin-top: 32px;
         margin-bottom: 32px;
