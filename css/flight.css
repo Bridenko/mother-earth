@@ -35,12 +35,19 @@
 }
 .flight-fly__title {
   max-width: 650px;
-  margin-bottom: 36px;
-  border-left: 3px solid white;
   color: white;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s cubic-bezier(0, 0.85, 0.09, 1.38) 0.5s;
+  z-index: 2;
+}
+.flight-fly__title.active-anim {
+  opacity: 1;
+  transform: translateX(0);
 }
 .flight-fly__text {
+  margin-top: 36px;
   max-width: 634px;
   margin-bottom: 80px;
   font-family: "SFCompactText", sans-serif;
@@ -48,6 +55,14 @@
   line-height: 21px;
   color: white;
   text-shadow: 0px 2px 10px black;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s cubic-bezier(0, 0.85, 0.09, 1.38) 0.6s;
+  z-index: 2;
+}
+.flight-fly__text.active-anim {
+  opacity: 1;
+  transform: translateX(0);
 }
 .flight-fly__buttom {
   display: inline-block;
@@ -90,6 +105,13 @@
   line-height: 80px;
   color: white;
   text-shadow: 6px 6px 3px rgba(0, 56, 19, 0.514);
+  opacity: 0;
+  transform: translateY(-200px);
+  transition: all 0.5s cubic-bezier(0, 0.85, 0.09, 1.38) 0.5s;
+}
+.flight-stories__title.active-anim {
+  opacity: 1;
+  transform: translateX(0);
 }
 .flight-stories__comment-ico {
   display: block;

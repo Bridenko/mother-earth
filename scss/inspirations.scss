@@ -1,14 +1,13 @@
-
 /* SECTION INSPIRATIONS - START */
 
-.inspirations {
-    
-}
+.inspirations {}
+
 .inspirations-container {
     padding-bottom: 100px;
     padding-top: 100px;
     margin-top: 200px;
 }
+
 .inspirations-title {
     padding: 0px 0px 20px 0px;
     max-width: 360px;
@@ -17,7 +16,17 @@
     text-shadow: 3px 3px 3px rgba(59, 59, 59, 0.1);
     border-bottom: 1px solid grey;
     border-left: none;
+    transform: translateX(-50px);
+    transition: all 0.5s cubic-bezier(0, .85, .09, 1.38) 0.3s;
+    z-index: 2;
+
+    &.active-anim {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
 }
+
 .inspirations-text {
     padding-top: 20px;
     max-width: 634px;
@@ -29,33 +38,46 @@
     line-height: 24px;
     color: #788692;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.5s cubic-bezier(0, .85, .09, 1.38) 0.6s;
+    z-index: 2;
+
+    &.active-anim {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
+
 .inspirations-cards {
-    
+
     display: grid;
     grid-template-columns: repeat(3, minmax(430px, auto));
     grid-template-rows: repeat(3, minmax(430px, auto));
     gap: 30px;
     overflow: hidden;
-    
-    
-    
-    
+
+
+
+
 }
+
 .inspirations-card {
     position: relative;
     border-radius: 8px;
     border: 3px solid rgb(216, 216, 216);
     overflow: hidden;
 }
+
 .inspirations-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
+
 .inspirations-card:hover {
-    
+
     .insp-info {
         left: 10px;
         border-left: 2px solid rgb(255, 255, 255);
@@ -67,6 +89,7 @@
 .is-big-width {
     grid-column: span 2;
 }
+
 .is-big-height {
     height: 710px;
 }
@@ -93,6 +116,7 @@
         color: white;
         text-shadow: 2px 3px 7px rgb(0, 0, 0);
     }
+
     &__title {
         max-width: 330px;
         margin-bottom: 18px;
@@ -103,22 +127,26 @@
         color: white;
         text-shadow: 0px 0px 10px rgb(0, 0, 0);
     }
+
     &__icons {
         display: flex;
     }
 
     &__icon {
         margin-left: -18px;
-    	
+
     }
+
     &__icon-link {
         overflow: hidden;
         box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.733);
         border-radius: 50%;
     }
+
     &__icon:nth-child(even) {
         z-index: 20;
     }
+
     &__icon:nth-child(1) {
         margin-left: 0px;
     }
@@ -129,54 +157,66 @@
         padding: 0px 20px;
         padding-bottom: 100px;
     }
+
     .inspirations-cards {
         grid-template-columns: repeat(2, minmax(350px, auto));
         grid-template-rows: repeat(4, minmax(450px, auto));
         gap: 20px;
     }
+
     .is-big-width {
         grid-column: span 1;
     }
+
     .is-big-width-grid {
         grid-column: span 2;
     }
+
     .is-big-height {
         height: 950px;
     }
 }
+
 @media (max-width: 1250px) {
-    
+
     .is-big-height {
         height: 900px;
     }
 }
+
 @media (max-width: 1150px) {
     .is-big-height {
         height: 800px;
     }
 }
+
 @media (max-width: 1150px) {
-    
+
     .is-big-height {
         height: 700px;
     }
 }
+
 @media (max-width: 1000px) {
     .inspirations-cards {
         grid-template-columns: repeat(2, minmax(350px, auto));
         grid-template-rows: repeat(4, minmax(700px, auto));
     }
+
     .is-big-height {
         height: 600px;
     }
+
     .inspirations-container {
         padding-bottom: 70px;
     }
+
     .inspirations-title {
         font-size: 55px;
         line-height: 57px;
         max-width: 300px;
     }
+
     .inspirations-text {
         margin-bottom: 50px;
     }
@@ -187,50 +227,61 @@
         grid-template-columns: repeat(2, minmax(350px, auto));
         grid-template-rows: repeat(4, minmax(500px, auto));
     }
+
     .is-big-height {
         height: 600px;
     }
 }
+
 @media (max-width: 800px) {
     .inspirations-cards {
         grid-template-columns: repeat(2, minmax(350px, auto));
         grid-template-rows: repeat(4, minmax(550px, auto));
 
     }
+
     .is-big-height {
         height: 600px;
     }
 }
+
 @media (max-width: 762px) {
     .inspirations-cards {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(7, minmax(550px, auto));
 
     }
+
     .is-big-width {
         grid-column: span 1;
     }
+
     .is-big-width-grid {
         grid-column: span 1;
     }
+
     .is-big-height {
         height: 800px;
     }
 }
+
 @media (max-width: 550px) {
     .inspirations-cards {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(7, minmax(550px, auto));
     }
+
     .is-big-height {
         height: 600px;
     }
+
     .inspirations-container {
         margin-top: 150px;
         padding-top: 0px;
         padding-bottom: 20px;
     }
 }
+
 @media (max-width: 330px) {
     .inspirations-title {
         font-size: 50px;

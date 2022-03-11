@@ -28,21 +28,39 @@ input[type='text'],[type='email'],[type='tel'] {
     }
 
     &__title {
-        margin-bottom: 40px;
+        
         max-width: 368px;
         color: white;
-        border-left: 3px solid rgb(255, 255, 255);
         text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: all 0.5s cubic-bezier(0, .85, .09, 1.38) 0.5s;
+        z-index: 2;
+
+        &.active-anim {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 
     &__text {
         max-width: 368px;
         padding-right: 20px;
+        margin-top: 40px;
         font-family: 'SFCompactText', sans-serif;
         font-size: 16px;
         line-height: 21px;
         color: white;
         text-shadow: 2px 2px 10px rgba(0, 0, 0, 1.0);
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: all 0.5s cubic-bezier(0, .85, .09, 1.38) 0.6s;
+        z-index: 2;
+
+        &.active-anim {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 
     &__form {
