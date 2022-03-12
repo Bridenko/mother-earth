@@ -92,7 +92,7 @@
   transition: 0.3s;
   z-index: 10;
   opacity: 0;
-  transform: translateX(-50px);
+  transform: translateX(-200px);
   transition: all 0.5s cubic-bezier(0, 0.85, 0.09, 1.38) 0.3s;
 }
 .insp-info.active-anim {
