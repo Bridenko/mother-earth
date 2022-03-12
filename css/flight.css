@@ -21,17 +21,18 @@
 .flight-fly__featured-link {
   padding: 18px 31px;
   color: white;
-  background-color: #ec3528;
+  letter-spacing: 2px;
+  font-weight: 400;
   border-radius: 24px;
-  border: 1px solid white;
-  box-shadow: 0px 3px 10px black;
-  transition: 0.2s;
+  transition: all 0.5s cubic-bezier(0.53, -0.91, 0.5, 1.81);
+  background-color: rgba(0, 0, 0, 0.753);
+  box-shadow: 0px 0px 5px red;
+  transition: all 0.4s cubic-bezier(0.53, -0.91, 0.5, 1.81);
 }
 .flight-fly__featured-link:hover {
   padding: 18px 35px;
-  letter-spacing: 3px;
-  background-color: #d43227;
-  transition: 0.2s;
+  letter-spacing: 4px;
+  box-shadow: 0px 0px 7px red;
 }
 .flight-fly__title {
   max-width: 650px;
@@ -54,7 +55,7 @@
   font-size: 14px;
   line-height: 21px;
   color: white;
-  text-shadow: 0px 2px 10px black;
+  text-shadow: black 1px 0 8px;
   opacity: 0;
   transform: translateX(-50px);
   transition: all 0.5s cubic-bezier(0, 0.85, 0.09, 1.38) 0.6s;
@@ -72,18 +73,17 @@
   text-shadow: 3px 3px 3px gray;
 }
 .flight-fly__buttom-link {
-  padding: 33px 79px;
+  padding: 33px 50px;
   color: white;
-  border-radius: 8px;
-  border: 1px solid white;
-  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.349);
-  background: linear-gradient(#73AFBA, #00b6d6);
-  transition: 0.2s;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 0px 5px red;
+  transition: all 0.4s cubic-bezier(0.53, -0.91, 0.5, 1.81);
 }
 .flight-fly__buttom-link:hover {
-  padding: 33px 85px;
-  letter-spacing: 3px;
-  transition: 0.2s;
+  padding: 33px 60px;
+  letter-spacing: 4px;
 }
 
 .flight-stories {
@@ -125,6 +125,13 @@
   display: flex;
   margin-top: 33px;
   border-bottom: gray solid 1px;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.5s cubic-bezier(0, 0.85, 0.09, 1.38) 0.5s;
+}
+.flight-stories__comment.active-anim {
+  opacity: 1;
+  transform: translateX(0);
 }
 .flight-stories__comment div {
   padding-left: 33px;

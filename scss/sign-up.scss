@@ -72,6 +72,14 @@ input[type='text'],[type='email'],[type='tel'] {
         max-width: 501px;
         width: 100%;
         border-radius: 8px ;
+        opacity: 0;
+        transform: translateY(-200px);
+        transition: all 0.5s cubic-bezier(0, .85, .09, 1.38) 1s;
+
+        &.active-anim {
+            opacity: 1;
+            transform: translateX(0);
+        }
         
     }
     &__form-container {

@@ -16,9 +16,9 @@
     text-shadow: 3px 3px 3px rgba(59, 59, 59, 0.1);
     border-bottom: 1px solid grey;
     border-left: none;
+    opacity: 0;
     transform: translateX(-50px);
     transition: all 0.5s cubic-bezier(0, .85, .09, 1.38) 0.3s;
-    z-index: 2;
 
     &.active-anim {
         opacity: 1;
@@ -106,6 +106,14 @@
     border-left: 2px solid rgba(255, 255, 255, 0);
     transition: 0.3s;
     z-index: 10;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.5s cubic-bezier(0, .85, .09, 1.38) 0.3s;
+
+    &.active-anim {
+        opacity: 1;
+        transform: translateX(0);
+    }
 
     &__text {
         margin-bottom: 10px;
