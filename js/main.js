@@ -154,7 +154,6 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         easing: 'ease-in-out',
-        speed: 1000,
         autoplay: true,
         autoplaySpeed: 3000,
         pauseOnHover: true,

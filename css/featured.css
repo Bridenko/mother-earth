@@ -35,7 +35,7 @@
 
 .featured-slider {
   opacity: 0;
-  transform: translateY(-50px);
+  transform: translateY(-300px);
   transition: all 0.5s cubic-bezier(0, 0.85, 0.09, 1.38) 0.8s;
   margin-bottom: 141px;
 }
