@@ -159,6 +159,19 @@ window.addEventListener('DOMContentLoaded', () => {
         autoplaySpeed: 3000,
         pauseOnHover: true,
         pauseOnFocus: true,
+        touchTheshold: 10,
+    });
+    $('.featured-slider__list').slick({
+        infinite: false,
+        arrows: false,
+        centerMode: true,
+        variableWidth: true,
+        adaptiveHeight: false,
+        touchTheshold: 100,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1,
+        easing: 'ease-in-out',
     });
 
     // Slider - end

@@ -164,6 +164,10 @@
   }
 }
 @media (max-width: 1200px) {
+  .flight {
+    margin-bottom: 70px;
+  }
+
   .flight-fly__title {
     max-width: 600px;
   }
@@ -193,11 +197,6 @@
   .flight-stories__title {
     max-width: 568px;
     margin-bottom: 60px;
-  }
-}
-@media (max-width: 1000px) {
-  .flight {
-    margin-bottom: 0px;
   }
 }
 @media (max-width: 400px) {

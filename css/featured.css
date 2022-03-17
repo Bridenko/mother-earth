@@ -1,0 +1,122 @@
+.featured-title {
+  padding: 0px 20px;
+  margin-bottom: 50px;
+  padding-left: 0px;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s cubic-bezier(0, 0.85, 0.09, 1.38) 0.3s;
+}
+.featured-title.active-anim {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.featured-text {
+  padding: 0px 20px;
+  max-width: 634px;
+  margin: 0px auto;
+  margin-bottom: 100px;
+  text-align: center;
+  font-family: "SFCompactText", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #788692;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s cubic-bezier(0, 0.85, 0.09, 1.38) 0.6s;
+  z-index: 2;
+}
+.featured-text.active-anim {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.featured-slider {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 0.5s cubic-bezier(0, 0.85, 0.09, 1.38) 0.8s;
+  margin-bottom: 141px;
+}
+.featured-slider.active-anim {
+  opacity: 1;
+  transform: translateY(0);
+}
+.featured-slider__list {
+  display: flex;
+}
+.featured-slider__list .slick-track {
+  padding: 4.5% 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+.featured-slider__list .slick-list {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+.featured-slider__item {
+  transition: transform 0.3s ease-in-out 0.3s;
+}
+.featured-slider__item.slick-center {
+  transform: scaleX(1.215) scaleY(1.215);
+}
+.featured-slider__item img {
+  max-width: 890px;
+  max-height: 551px;
+  width: 70vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 1150px) {
+  .featured-title {
+    margin-bottom: 50px;
+  }
+
+  .featured-text {
+    margin-bottom: 50px;
+  }
+
+  .featured-slider {
+    margin-bottom: 70px;
+  }
+  .featured-slider__item img {
+    width: 50vw;
+  }
+  .featured-slider__list {
+    display: flex;
+  }
+  .featured-slider__list .slick-track {
+    gap: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .featured-slider__item img {
+    width: 50vw;
+  }
+  .featured-slider__list .slick-track {
+    gap: 70px;
+  }
+}
+@media (max-width: 375px) {
+  .featured-title {
+    margin-bottom: 30px;
+  }
+
+  .featured-text {
+    margin-bottom: 30px;
+  }
+
+  .featured-slider__item img {
+    width: 70vw;
+  }
+  .featured-slider__list .slick-track {
+    padding: 8% 0px;
+    gap: 35px;
+  }
+}
